@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class PressureSensorExample  : AppCompatActivity(), SensorEventListener {
+class SensorPressureExample  : AppCompatActivity(), SensorEventListener {
 
     private lateinit var sensorManager: SensorManager
     private lateinit var pressure: Sensor
@@ -17,7 +17,7 @@ class PressureSensorExample  : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pressure_sensor_example)
+        setContentView(R.layout.activity_sensor_pressure_example)
 
         pressureValuesTextView = findViewById(R.id.pressure_values_text_view)
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager

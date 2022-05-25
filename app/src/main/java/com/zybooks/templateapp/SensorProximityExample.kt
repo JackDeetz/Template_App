@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class ProximitySensorExample  : AppCompatActivity(), SensorEventListener {
+class SensorProximityExample  : AppCompatActivity(), SensorEventListener {
 
     private lateinit var sensorManager: SensorManager
     private lateinit var proximity: Sensor
@@ -17,7 +17,7 @@ class ProximitySensorExample  : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_proximity_sensor_example)
+        setContentView(R.layout.activity_sensor_proximity_example)
 
         proximityValuesTextView = findViewById(R.id.proximity_values_text_view)
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager

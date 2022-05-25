@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.004" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/recyclerViewCardViewItemText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View objects are placed in relation to others, designated by designer"
@@ -43,7 +43,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewCardViewItemText">
 
         <TextView
             android:id="@+id/textView2"

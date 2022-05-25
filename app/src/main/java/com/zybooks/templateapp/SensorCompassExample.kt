@@ -9,7 +9,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 
-class CompassExample : AppCompatActivity(), SensorEventListener {
+class SensorCompassExample : AppCompatActivity(), SensorEventListener {
 
     private lateinit var compassImage: ImageView
     private lateinit var sensorManager: SensorManager
@@ -23,7 +23,7 @@ class CompassExample : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_compass_example)
+        setContentView(R.layout.activity_sensor_compass_example)
 
         // Image has north facing up
         compassImage = findViewById(R.id.compass_image)

@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class LightSensorExample  : AppCompatActivity(), SensorEventListener {
+class SensorLightExample  : AppCompatActivity(), SensorEventListener {
 
     private lateinit var sensorManager: SensorManager
     private lateinit var lightSensor: Sensor
@@ -17,7 +17,7 @@ class LightSensorExample  : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_light_sensor_example)
+        setContentView(R.layout.activity_sensor_light_example)
 
         lightValuesTextView = findViewById(R.id.light_values_text_view)
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager

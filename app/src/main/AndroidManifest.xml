@@ -29,64 +29,76 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TemplateApp">
         <activity
-            android:name=".PressureSensorExample"
-            android:exported="false"
-            android:parentActivityName=".MotionSensorsExample" />
+            android:name=".recyclerview.RecyclerViewExample"
+            android:exported="false" />
         <activity
-            android:name=".ProximitySensorExample"
+            android:name=".SensorPressureExample"
             android:exported="false"
-            android:parentActivityName=".MotionSensorsExample" />
+            android:parentActivityName=".SensorsExample" />
         <activity
-            android:name=".LightSensorExample"
+            android:name=".SensorProximityExample"
             android:exported="false"
-            android:parentActivityName=".MotionSensorsExample" />
+            android:parentActivityName=".SensorsExample" />
         <activity
-            android:name=".GyroscopeExample"
+            android:name=".SensorLightExample"
             android:exported="false"
-            android:parentActivityName=".MotionSensorsExample" />
+            android:parentActivityName=".SensorsExample" />
         <activity
-            android:name=".CompassExample"
+            android:name=".SensorGyroscopeExample"
             android:exported="false"
-            android:parentActivityName=".MotionSensorsExample" />
+            android:parentActivityName=".SensorsExample" />
         <activity
-            android:name=".AccelerometerExample"
+            android:name=".SensorCompassExample"
             android:exported="false"
-            android:parentActivityName=".MotionSensorsExample"
+            android:parentActivityName=".SensorsExample" />
+        <activity
+            android:name=".SensorAccelerometerExample"
+            android:exported="false"
+            android:parentActivityName=".SensorsExample"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MotionSensorsExample"
-            android:exported="false" />
+            android:name=".SensorsExample"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SurfaceViewExample"
             android:exported="false"
+            android:parentActivityName=".MainActivity"
             tools:ignore="Instantiatable" />
         <activity
             android:name=".SoundsExample"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ValueAnimatorExample"
             android:exported="false" />
         <activity
             android:name=".AnimationsExample"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ShapeAndCustomDrawablesExample"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BackgroundTaskExample"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SavingDataExample"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DialogFragmentExample"
             android:exported="false" />
         <activity
             android:name=".TouchGesturesExample"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TouchEventExample"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AppBarExample"
             android:exported="false"
@@ -103,7 +115,7 @@
             android:name=".ContextMenuExample"
             android:exported="false" />
         <activity
-            android:name=".ActivityWithFragments"
+            android:name=".FragmentActivityWithFragments"
             android:exported="false" />
         <activity
             android:name=".PassedValueActivity"

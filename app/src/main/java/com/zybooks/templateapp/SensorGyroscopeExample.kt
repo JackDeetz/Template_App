@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class GyroscopeExample  : AppCompatActivity(), SensorEventListener {
+class SensorGyroscopeExample  : AppCompatActivity(), SensorEventListener {
 
     private lateinit var sensorManager: SensorManager
     private lateinit var gyroscope: Sensor
@@ -17,7 +17,7 @@ class GyroscopeExample  : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gyroscope_example)
+        setContentView(R.layout.activity_sensor_gyroscope_example)
 
         gyroValuesTextView = findViewById(R.id.gyroscope_values_text_view)
         sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager

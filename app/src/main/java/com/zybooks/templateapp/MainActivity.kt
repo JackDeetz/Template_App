@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.content.ContextCompat
+import com.zybooks.templateapp.recyclerview.RecyclerViewExample
 
 private var KEY_TO_VALUE : String = "Key"
 private var value : Int = 0
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         //save values to save state to be loaded in onCreate
         super.onSaveInstanceState(outState)
         outState.putInt(KEY_TO_VALUE, value + 1)
-        var textInput : EditText = findViewById(R.id.textInputField)
+        var textInput : EditText = findViewById(R.id.menuDataToPassToActivityEditText)
         var textValue = textInput.text.toString()
         outState.putString("textEntryKey", textValue)
     }
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         //method is called after onStart(), and the activity enters the foreground.
-        var mATVSV : TextView = findViewById(R.id.main_activity_textView_savedValue)
+        var mATVSV : TextView = findViewById(R.id.menuActivityPersistentDataTextView)
         mATVSV.text = "Activity has been destroyed and created " + value.toString() + " times."
     }
 
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         //Send the current color ID to ColorActivity
         val intent = Intent(this, PassedValueActivity::class.java)
 
-        var textInputView : EditText = findViewById(R.id.textInputField)
+        var textInputView : EditText = findViewById(R.id.menuDataToPassToActivityEditText)
         intent.putExtra("Passed_Value", textInputView.text.toString())
         PassedValueActivityLauncher.launch(intent)
     }
@@ -94,14 +94,14 @@ class MainActivity : AppCompatActivity() {
         if (result.resultCode == Activity.RESULT_OK) {
             // Create the "on" button color based on the chosen color ID from ColorActivity
             var passedValue : String? = result.data!!.getStringExtra("Passed_Value")
-            var showTextView : TextView = findViewById(R.id.showUsersInputText)
+            var showTextView : TextView = findViewById(R.id.menuReturnFromActivityDataOutputTextView)
             showTextView.text = passedValue
 
         }
     }
 
     fun fragmentButtonClicked(view: View) {
-        startActivity(Intent(this, ActivityWithFragments::class.java))
+        startActivity(Intent(this, FragmentActivityWithFragments::class.java))
     }
 
     fun contextMenuButtonClicked(view: View) {
@@ -145,10 +145,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, SurfaceViewExample::class.java))}
 
     fun motionSensorsButtonClicked(view: View) {
-        startActivity(Intent(this, MotionSensorsExample::class.java))}
+        startActivity(Intent(this, SensorsExample::class.java))}
 
     fun recyclerViewButtonClicked(view: View) {
-    //    startActivity(Intent(this, RecyclerViewExample::class.java))
+        startActivity(Intent(this, RecyclerViewExample::class.java))
     }
 
 }

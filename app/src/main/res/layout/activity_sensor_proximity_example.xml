@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GyroscopeExample">
+    tools:context=".SensorGyroscopeExample">
 
     <TextView
         android:id="@+id/proximity_values_text_view"

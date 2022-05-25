@@ -10,7 +10,7 @@
     tools:layout_editor_absoluteY="0dp">>
 
     <Button
-        android:id="@+id/layoutExampleActivityLoadButton"
+        android:id="@+id/menuLayoutExamplesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="layoutButtonClicked"
@@ -19,39 +19,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="159dp"
-        android:layout_height="84dp"
-        android:text="creates an 'Intent', loads the new activity, and launches it. No information is passed from activity to activity"
-        app:layout_constraintLeft_toRightOf="@+id/layoutExampleActivityLoadButton"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/main_activity_textView_savedValue"
+        android:id="@+id/menuActivityPersistentDataTextView"
         android:layout_width="248dp"
         android:layout_height="wrap_content"
         android:text="Activity Destroyed Persistent Data:\nActivity has been destroyed and created 0 times."
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutExampleActivityLoadButton" />
+        app:layout_constraintTop_toBottomOf="@+id/menuLayoutExamplesButton" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/menuPassValueToActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="passValueToActivityButtonClicked"
         android:text="Pass value to new activity"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_activity_textView_savedValue" />
+        app:layout_constraintTop_toBottomOf="@id/menuActivityPersistentDataTextView" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/menuInputFrameBox"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@id/button2"
-        app:layout_constraintTop_toTopOf="@id/button2">
+        app:layout_constraintLeft_toRightOf="@id/menuPassValueToActivityButton"
+        app:layout_constraintTop_toTopOf="@id/menuPassValueToActivityButton">
 
         <EditText
-            android:id="@+id/textInputField"
+            android:id="@+id/menuDataToPassToActivityEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Value To Pass To New Activity"
@@ -61,180 +53,173 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/showUsersInputText"
+        android:id="@+id/menuReturnFromActivityDataOutputTextView"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="null"
-        app:layout_constraintLeft_toRightOf="@id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintLeft_toRightOf="@id/menuReturnFromActivityDataLabelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/menuInputFrameBox">
 
     </TextView>
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/menuReturnFromActivityDataLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:paddingEnd="5dp"
         android:text="Value passed back from Launched activity ->"
-        app:layout_constraintBaseline_toBaselineOf="@+id/showUsersInputText"
-        app:layout_constraintRight_toRightOf="@+id/button2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/menuReturnFromActivityDataOutputTextView"
+        app:layout_constraintRight_toRightOf="@+id/menuPassValueToActivityButton"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/menuFragmentActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="fragmentButtonClicked"
         android:text="Fragments Activity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/menuReturnFromActivityDataLabelTextView" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/menuContextMenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="contextMenuButtonClicked"
         android:text="context menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/menuFragmentActivityButton" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/menuImplicitIntentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="implicitIntentButtonClicked"
         android:text="Implicit Intent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/menuContextMenuButton" />
 
     <Button
-        android:id="@+id/appBarButton"
+        android:id="@+id/menuAppBarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:onClick="appBarButtonClicked"
         android:text="App Bar"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/menuContextMenuButton"
+        app:layout_constraintTop_toBottomOf="@+id/menuFragmentActivityButton" />
 
     <Button
-        android:id="@+id/touchEventsButton"
+        android:id="@+id/menuTouchEventsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="touchEventsButtonClicked"
         android:text="Touch Events"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button30" />
+        app:layout_constraintTop_toBottomOf="@+id/menuAnimationButton" />
 
     <Button
-        android:id="@+id/touchGesturesButton"
+        android:id="@+id/menuTouchGesturesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="touchGesturesButtonClicked"
         android:text="Touch Gestures"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/touchEventsButton" />
+        app:layout_constraintTop_toBottomOf="@+id/menuTouchEventsButton" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/menuDialogFragmentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="dialogFragmentButtonClicked"
         android:text="Dialog Fragment"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/touchGesturesButton" />
+        app:layout_constraintTop_toBottomOf="@+id/menuTouchGesturesButton" />
 
     <Button
-        android:id="@+id/buttonSavingData"
+        android:id="@+id/menusSavingDataButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="savingDataButtonClicked"
         android:text="Saving Data"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
+        app:layout_constraintTop_toBottomOf="@+id/menuDialogFragmentButton" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/menuDatabaseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_700"
         android:onClick="databaseButtonClicked"
         android:text="Database"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSavingData" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Under Construction"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button17"
-        app:layout_constraintStart_toEndOf="@+id/button17" />
+        app:layout_constraintTop_toBottomOf="@+id/menusSavingDataButton" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/menuBackgroundTasksButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="backgroundTasksButtonClicked"
         android:text="Background Tasks"
-        app:layout_constraintStart_toEndOf="@+id/buttonSavingData"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
+        app:layout_constraintStart_toEndOf="@+id/menusSavingDataButton"
+        app:layout_constraintTop_toBottomOf="@+id/menuDialogFragmentButton" />
 
     <Button
-        android:id="@+id/button28"
+        android:id="@+id/menuShapeCustomDrawablesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="shapeCustomDrawablesButtonClicked"
         android:text="Shape Custom Drawables"
-        app:layout_constraintStart_toEndOf="@+id/touchEventsButton"
-        app:layout_constraintTop_toTopOf="@+id/touchEventsButton" />
+        app:layout_constraintStart_toEndOf="@+id/menuTouchEventsButton"
+        app:layout_constraintTop_toTopOf="@+id/menuTouchEventsButton" />
 
     <Button
-        android:id="@+id/button30"
+        android:id="@+id/menuAnimationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="animationsButtonClicked"
         android:text="Animation Drawables\nView Animations"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/menuImplicitIntentButton" />
 
     <Button
-        android:id="@+id/button34"
+        android:id="@+id/menuSoundsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="soundsButtonClicked"
         android:text="Sounds"
-        app:layout_constraintStart_toEndOf="@+id/touchGesturesButton"
-        app:layout_constraintTop_toBottomOf="@+id/button28" />
+        app:layout_constraintStart_toEndOf="@+id/menuTouchGesturesButton"
+        app:layout_constraintTop_toBottomOf="@+id/menuShapeCustomDrawablesButton" />
 
     <Button
-        android:id="@+id/button37"
+        android:id="@+id/menuSurfaceViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="surfaceViewButtonClicked"
+        android:backgroundTint="@color/teal_700"
         android:text="SurfaceView"
-        app:layout_constraintStart_toEndOf="@+id/button13"
-        app:layout_constraintTop_toBottomOf="@+id/touchGesturesButton" />
+        app:layout_constraintStart_toEndOf="@+id/menuDialogFragmentButton"
+        app:layout_constraintTop_toBottomOf="@+id/menuTouchGesturesButton" />
 
     <Button
-        android:id="@+id/button38"
+        android:id="@+id/menuSensorsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="motionSensorsButtonClicked"
         android:text="Motion Sensors"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintStart_toEndOf="@+id/menuImplicitIntentButton"
+        app:layout_constraintTop_toBottomOf="@+id/menuContextMenuButton" />
 
     <Button
-        android:id="@+id/button45"
+        android:id="@+id/menuRecyclerViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="recycler View"
         android:onClick="recyclerViewButtonClicked"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/menuFragmentActivityButton"
+        app:layout_constraintTop_toTopOf="@+id/menuFragmentActivityButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
