@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import com.zybooks.templateapp.recyclerview.RecyclerViewExample
+import com.zybooks.templateapp.surfaceview.SurfaceViewExample
 
 private var KEY_TO_VALUE : String = "Key"
 private var value : Int = 0

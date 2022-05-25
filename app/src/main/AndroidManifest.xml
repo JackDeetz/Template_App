@@ -29,6 +29,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TemplateApp">
         <activity
+            android:name=".surfaceview.SurfaceViewMediaPlayerExample"
+            android:exported="false" />
+        <activity
+            android:name=".surfaceview.SurfaceViewCameraExample"
+            android:exported="false" />
+        <activity
             android:name=".recyclerview.RecyclerViewExample"
             android:exported="false" />
         <activity
@@ -61,10 +67,8 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".SurfaceViewExample"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            tools:ignore="Instantiatable" />
+            android:name=".surfaceview.SurfaceViewExample"
+            android:exported="false" />
         <activity
             android:name=".SoundsExample"
             android:exported="false"

@@ -27,10 +27,14 @@
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_question.xml" value="0.9078947368421053" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_recycler_view_example.xml" value="0.2994791666666667" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_saving_data_example.xml" value="0.14601769911504425" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_sensor_accelerometer_example.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_sensors_example.xml" value="0.1" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_shape_and_custom_drawables_example.xml" value="0.25" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_sounds_example.xml" value="0.3625" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_subject.xml" value="0.1" />
-        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_surface_view_example.xml" value="0.2020460358056266" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_surface_view_camera_example.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_surface_view_example.xml" value="0.1" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_surface_view_media_player_example.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_touch_event_example.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_touch_gestures_example.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_value_animator_example.xml" value="0.33" />
