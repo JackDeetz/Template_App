@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShapeAndCustomDrawablesExample">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            app:srcCompat="@drawable/shape_drawable_attributes"
+            android:contentDescription="Description of shape attributes" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/custom_drawable_method_explained" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="150dp"
+            app:srcCompat="@drawable/myrectangle" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="150dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="170dp"
+            app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="120dp"
+            android:text="Shape example\nmyrectangle.xml" />
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="90dp"
+            android:onClick="drawCustomDrawableButtonClicked"
+            android:text="Draw Custom Drawable" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

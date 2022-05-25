@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zybooks.templateapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- add query for implicit intents, ie phone dialing, -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data android:scheme="geo" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+
+            <data android:mimeType="image/*" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TemplateApp">
+        <activity
+            android:name=".PressureSensorExample"
+            android:exported="false"
+            android:parentActivityName=".MotionSensorsExample" />
+        <activity
+            android:name=".ProximitySensorExample"
+            android:exported="false"
+            android:parentActivityName=".MotionSensorsExample" />
+        <activity
+            android:name=".LightSensorExample"
+            android:exported="false"
+            android:parentActivityName=".MotionSensorsExample" />
+        <activity
+            android:name=".GyroscopeExample"
+            android:exported="false"
+            android:parentActivityName=".MotionSensorsExample" />
+        <activity
+            android:name=".CompassExample"
+            android:exported="false"
+            android:parentActivityName=".MotionSensorsExample" />
+        <activity
+            android:name=".AccelerometerExample"
+            android:exported="false"
+            android:parentActivityName=".MotionSensorsExample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MotionSensorsExample"
+            android:exported="false" />
+        <activity
+            android:name=".SurfaceViewExample"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SoundsExample"
+            android:exported="false" />
+        <activity
+            android:name=".ValueAnimatorExample"
+            android:exported="false" />
+        <activity
+            android:name=".AnimationsExample"
+            android:exported="false" />
+        <activity
+            android:name=".ShapeAndCustomDrawablesExample"
+            android:exported="false" />
+        <activity
+            android:name=".BackgroundTaskExample"
+            android:exported="false" />
+        <activity
+            android:name=".SavingDataExample"
+            android:exported="false" />
+        <activity
+            android:name=".DialogFragmentExample"
+            android:exported="false" />
+        <activity
+            android:name=".TouchGesturesExample"
+            android:exported="false" />
+        <activity
+            android:name=".TouchEventExample"
+            android:exported="false" />
+        <activity
+            android:name=".AppBarExample"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <!--
+ adding the parentActivityName reference to the parent activity,
+        it adds a return button to App Bar
+        -->
+        <activity
+            android:name=".ImplicitIntentExample"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ContextMenuExample"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityWithFragments"
+            android:exported="false" />
+        <activity
+            android:name=".PassedValueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LayoutExamples"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

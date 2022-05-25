@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/drawable/frame_by_frame_animation.xml" value="0.3635" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/drawable/myrectangle.xml" value="0.3635" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_accelerometer_example.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_animations_example.xml" value="0.25" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_app_bar_example.xml" value="0.33" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_background_task_example.xml" value="0.5" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_compass_example.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_context_menu_example.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_database_example.xml" value="0.18" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_dialog_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_dialog_fragment_example.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_gyroscope_example.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_implicit_intent_example.xml" value="0.1" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_layout_examples.xml" value="0.33" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_light_sensor_example.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_motion_sensors_example.xml" value="0.2544987146529563" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_passed_value.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_pressure_sensor_example.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_proximity_sensor_example.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_question.xml" value="0.9078947368421053" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_saving_data_example.xml" value="0.14601769911504425" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_shape_and_custom_drawables_example.xml" value="0.25" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_sounds_example.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_subject.xml" value="0.1" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_surface_view_example.xml" value="0.2020460358056266" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_touch_event_example.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_touch_gestures_example.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_value_animator_example.xml" value="0.33" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/activity_with_fragments.xml" value="0.1483375959079284" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/fragment_bottom.xml" value="0.1" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/fragment_bottom_alt.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/fragment_detail.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/fragment_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/fragment_list.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/fragment_list_list.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/fragment_top.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/layout/recycler_view_items.xml" value="0.25" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/menu/appbar_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/menu/context_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/menu/fragment_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/beave/AndroidStudioProjects/TemplateApp/app/src/main/res/menu/nav_graph.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

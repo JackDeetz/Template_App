@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Template App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="channel_name">timerWorkerChannelName</string>
+    <string name="channel_description">timerWorkerChannelDescription</string>
+
+    <string-array name="bands">
+        <item>The Beatles</item>
+        <item>Nirvana</item>
+        <item>U2</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>An English rock band that formed in Liverpool in 1960.</item>
+        <item>An American rock band that formed in Washington in 1987.</item>
+        <item>An Irish rock band from Dublin that formed in 1976.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--The menu items represent a collection of fragments to to menu icon/labels-->
+    <item
+        android:id="@+id/bottomFragment"
+        android:icon="@drawable/arrow"
+        android:title="bottom fragment"
+        android:iconTint="@color/white"/>
+
+    <item
+        android:id="@+id/bottomFragmentAlt"
+        android:icon="@drawable/arrow"
+        android:title="bottom alt fragment"
+        android:iconTint="@color/white"/>
+
+</menu>

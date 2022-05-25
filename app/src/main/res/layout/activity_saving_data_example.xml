@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavingDataExample">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saving data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data that persists even when app is exited"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save To Activities XML File"
+        android:onClick="saveToActivitiesXLMFileButtonClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextInputKeyToSave"
+        android:hint="Key"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextInputValueToSave"
+        android:hint="Value"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintLeft_toRightOf="@+id/editTextInputKeyToSave"/>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save To myprefs XML File"
+        android:onClick="saveTomyprefsXLMFileButtonClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInputKeyToSave" />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextOtherInputKeyToSave"
+        android:hint="Key"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextOtherInputValueToSave"
+        android:hint="Value"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:layout_constraintLeft_toRightOf="@+id/editTextOtherInputKeyToSave"/>
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Read Saved Data from Activity XML"
+        android:onClick="readSavedDataFromActivityXMLFileButtonClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOtherInputKeyToSave" />
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Read Saved Data from mypref XML"
+        android:onClick="readSavedDataFrommyprefXMLFileButtonClicked"
+        app:layout_constraintStart_toEndOf="@id/button14"
+        app:layout_constraintTop_toBottomOf="@id/editTextOtherInputKeyToSave" />
+
+    <EditText
+        android:id="@+id/editTextKeyLookUp"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:hint="Key To LookUp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button14" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="output"
+        android:id="@+id/textViewReadFromXMLOutput"
+        app:layout_constraintLeft_toRightOf="@id/editTextKeyLookUp"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTextKeyLookUp"/>
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save To Internal Storage"
+        android:onClick="saveDataToInternalStorageButtonClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKeyLookUp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save To External Storage"
+        android:onClick="saveDataToExternalStorageButtonClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:onClick="readDataFromInternalStorageButtonClicked"
+        app:layout_constraintStart_toEndOf="@+id/button16"
+        tools:layout_editor_absoluteY="307dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/button16"/>
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Read"
+        android:onClick="readDataFromExternalStorageButtonClicked"
+        app:layout_constraintStart_toEndOf="@+id/button17"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextInputFileNameInternalAndExternal"
+        app:layout_constraintTop_toBottomOf="@id/button17"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="File Name"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextInputValueInternalAndExternal"
+        app:layout_constraintTop_toBottomOf="@id/button17"
+        app:layout_constraintLeft_toRightOf="@id/editTextInputFileNameInternalAndExternal"
+        android:hint="Value to Save"
+        />
+
+    <TextView
+        android:id="@+id/textViewReadFileOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInputFileNameInternalAndExternal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

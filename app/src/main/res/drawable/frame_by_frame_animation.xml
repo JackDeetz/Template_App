@@ -1,0 +1,6 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/frasier_anim_one" android:duration="2000" />
+    <item android:drawable="@drawable/frasier_anim_two" android:duration="2000" />
+    <item android:drawable="@drawable/frasier_anim_three" android:duration="2000" />
+</animation-list>
