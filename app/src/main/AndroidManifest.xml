@@ -38,7 +38,7 @@
         android:theme="@style/Theme.TemplateApp">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCIOKjmQmNnMQH-iYo4SDUX-p4OcepbgIU" />
+            android:value="ValueRemovedForSecurity" />
         <activity
             android:name=".LocationExample"
             android:exported="false" />
