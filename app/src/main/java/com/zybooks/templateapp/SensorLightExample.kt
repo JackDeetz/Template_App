@@ -36,7 +36,7 @@ class SensorLightExample  : AppCompatActivity(), SensorEventListener {
         // Display values in the UI
         val newline = System.getProperty("line.separator")
         val message = "Light = ${event.values[0]}"
-        lightValuesTextView.text = message;
+        lightValuesTextView.text = message
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {

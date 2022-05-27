@@ -13,12 +13,14 @@ import android.view.SurfaceView
 import android.view.TextureView
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.zybooks.templateapp.R
 import com.zybooks.templateapp.databinding.ActivitySurfaceViewCameraExampleBinding
+import org.w3c.dom.Text
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
@@ -32,6 +34,7 @@ class SurfaceViewCameraExample : AppCompatActivity(), SurfaceHolder.Callback, Ca
 
     private var surfaceHolder: SurfaceHolder? = null
     private var camera: Camera? = null
+    private var frontOrBack : Int = 0
 
     private val neededPermissions = arrayOf(CAMERA, WRITE_EXTERNAL_STORAGE)
 
@@ -130,6 +133,24 @@ class SurfaceViewCameraExample : AppCompatActivity(), SurfaceHolder.Callback, Ca
 
     private fun setBtnClick() {
         binding.startBtn.setOnClickListener { captureImage() }
+        binding.switchCameraButton.setOnClickListener {
+            switchCamera()
+            findViewById<TextView>(R.id.cameraInUseTextView).text = when (frontOrBack) {
+                                                                         0 -> "Back"
+                                                                         1 -> "Font"
+                                                                        else -> "Other"
+            }
+        }
+    }
+
+    private fun switchCamera() {
+        frontOrBack++
+        if (frontOrBack > Camera.getNumberOfCameras() - 1)
+        {
+            frontOrBack = 0
+        }
+        releaseCamera()
+        startCamera()
     }
 
     private fun captureImage() {
@@ -143,7 +164,7 @@ class SurfaceViewCameraExample : AppCompatActivity(), SurfaceHolder.Callback, Ca
     }
 
     private fun startCamera() {
-        camera = Camera.open()
+        camera = Camera.open(frontOrBack)
         camera!!.setDisplayOrientation(90)
         try {
             camera!!.setPreviewDisplay(surfaceHolder)

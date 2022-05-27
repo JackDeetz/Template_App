@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/import_questions"
+        android:icon="@drawable/arrow_up"
+        android:title="import questions"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/settings"
+        android:icon="@drawable/arrow"
+        android:title="settings"
+        app:showAsAction="ifRoom"/>
+</menu>

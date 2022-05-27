@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
+import com.zybooks.templateapp.database.DatabaseExample
 import com.zybooks.templateapp.recyclerview.RecyclerViewExample
 import com.zybooks.templateapp.surfaceview.SurfaceViewExample
 
@@ -87,10 +88,10 @@ class MainActivity : AppCompatActivity() {
 
         var textInputView : EditText = findViewById(R.id.menuDataToPassToActivityEditText)
         intent.putExtra("Passed_Value", textInputView.text.toString())
-        PassedValueActivityLauncher.launch(intent)
+        passValueToActivityLauncher.launch(intent)
     }
     //returned values are packaged in 'result'
-    private val PassedValueActivityLauncher = registerForActivityResult(
+    private val passValueToActivityLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
             // Create the "on" button color based on the chosen color ID from ColorActivity
@@ -127,7 +128,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, SavingDataExample::class.java))}
 
     fun databaseButtonClicked(view: View) {
-    //    startActivity(Intent(this, DatabaseExample::class.java))
+        startActivity(Intent(this, DatabaseExample::class.java))
     }
 
     fun backgroundTasksButtonClicked(view: View) {
@@ -152,4 +153,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, RecyclerViewExample::class.java))
     }
 
+    fun locationButtonClicked(view: View) {
+        startActivity(Intent(this, LocationExample::class.java))
+    }
 }

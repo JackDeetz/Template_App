@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.TextView
 
 class ContextMenuExample : AppCompatActivity() {
@@ -18,7 +17,7 @@ class ContextMenuExample : AppCompatActivity() {
     }
     //Context Menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.context_menu, menu)
+        menuInflater.inflate(R.menu.context_menu_example, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

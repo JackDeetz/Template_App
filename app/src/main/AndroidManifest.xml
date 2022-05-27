@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zybooks.templateapp">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- add query for implicit intents, ie phone dialing, -->
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+
     <queries>
         <intent>
             <action android:name="android.intent.action.DIAL" />
@@ -26,6 +28,7 @@
         </intent>
     </queries>
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -33,6 +36,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TemplateApp">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCIOKjmQmNnMQH-iYo4SDUX-p4OcepbgIU" />
+        <activity
+            android:name=".LocationExample"
+            android:exported="false" />
+        <activity
+            android:name=".database.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".database.QuestionEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".database.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".database.ImportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".database.DatabaseExample"
+            android:exported="false" />
         <activity
             android:name=".surfaceview.SurfaceViewMediaPlayerExample"
             android:exported="false" />

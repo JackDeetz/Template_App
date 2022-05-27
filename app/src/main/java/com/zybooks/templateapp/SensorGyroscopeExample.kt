@@ -36,7 +36,7 @@ class SensorGyroscopeExample  : AppCompatActivity(), SensorEventListener {
         // Display values in the UI
         val newline = System.getProperty("line.separator")
         val message = "X axis = ${event.values[0]}$newline Y axis = ${event.values[1]}$newline Z axis = ${event.values[2]}"
-        gyroValuesTextView.text = message;
+        gyroValuesTextView.text = message
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {

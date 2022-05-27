@@ -36,7 +36,7 @@ class SensorPressureExample  : AppCompatActivity(), SensorEventListener {
         // Display values in the UI
         val newline = System.getProperty("line.separator")
         val message = "X axis = ${event.values[0]}"
-        pressureValuesTextView.text = message;
+        pressureValuesTextView.text = message
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
